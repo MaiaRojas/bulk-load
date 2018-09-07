@@ -28,11 +28,11 @@ const getUserData = (index) => ({
 
 const sendRequest = (data, token) => {
     console.log('token', token , 'data', data)
-    return fetch(`https://laboratoria-la-staging.firebaseapp.com/users/${data.email}`, {
+    return fetch(`https://laboratoria-la.firebaseapp.com/users/${data.email}`, {
         method: 'PUT',
         body: JSON.stringify(data),
         headers: {
-            'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmNTVkZWZlOWU5YzU2ZmRhZTRkOGY0MDFjZjQ5Njc4YzE2N2MzYWEifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGFib3JhdG9yaWEtbGEtc3RhZ2luZyIsImF1ZCI6ImxhYm9yYXRvcmlhLWxhLXN0YWdpbmciLCJhdXRoX3RpbWUiOjE1MzYzNTA5MDYsInVzZXJfaWQiOiJ5b00zNFA5RElYWmhteWNMbU96UjEzeE85R1YyIiwic3ViIjoieW9NMzRQOURJWFpobXljTG1PelIxM3hPOUdWMiIsImlhdCI6MTUzNjM1MDkwNiwiZXhwIjoxNTM2MzU0NTA2LCJlbWFpbCI6ImNoYXF1aUBsYWJvcmF0b3JpYS5sYSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXF1aUBsYWJvcmF0b3JpYS5sYSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.GABZ-LCr5q-2cXGc5q1UsLHTHPItpHj_2zNC6YY_9oxjNp7PlqquCkeqUYqA2H3dumDKhnAwIJF2O7Zdtlv9va8PUPeR15BZLCt19xuV3LnsTKOcjZYFEe8O0YsNC6GENQPPdPPrx2C_zuDlj3NKWKGyJCyhi-xWsfhVdQlQeZsIDPtqciGayEY4_g8DB6crcutUggjK43vhdtYe6g2MOHBDmWc7lbArxVtYtZ9Y-TfVyaUgCOIL_nGR_wAb6YWI9eHh69JdDx45JdaFIyutOvUqV6eC1Pqk-M6_2KD__iEH0LgRLlxJVdMkgqRSJbiOl5hkzKLErmAJXTBmXndwwA`,
+            'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmNTVkZWZlOWU5YzU2ZmRhZTRkOGY0MDFjZjQ5Njc4YzE2N2MzYWEifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGFib3JhdG9yaWEtbGEiLCJhdWQiOiJsYWJvcmF0b3JpYS1sYSIsImF1dGhfdGltZSI6MTUzNjM1NzE1NywidXNlcl9pZCI6IktZM25LOUVHN3VnVEs0Yk0yZWxESFhHRUJzajEiLCJzdWIiOiJLWTNuSzlFRzd1Z1RLNGJNMmVsREhYR0VCc2oxIiwiaWF0IjoxNTM2MzU3MTU3LCJleHAiOjE1MzYzNjA3NTcsImVtYWlsIjoiY2hhcXVpQGxhYm9yYXRvcmlhLmxhIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhcXVpQGxhYm9yYXRvcmlhLmxhIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HLcYH027GCqKQkV8bXU1qw0XeLmRdq5aFWVAyTrHU6lu1dGyZXdMmwJaAd9oWC4b2M-F2dlwj0euLeLpLSYV_mZX60qUwnIgvJTsnyTDg-UmwEolAOPCXci_7AxShtMoj8yu7YfWQNvVx354tdy04tTiTNVbfCIRgIk2xR_s1oHRg8RU_XzlBhZrOyvKwi7b8NCdw7RnzW02m7JEu3UtAH8OPzfWttAyF-xxYWrN7Is2miQiKe8xvx3nXu5XpKeD058R1QsT2uN6IfBdvkgCg-Qnly9taQrusv1JFtkqm9yXc2rSiVQCbPRnbjR5CZrI6HXcmTdGQi-M4jJJNJ795g`,
             'Content-Type': 'application/json',
         },
     });
